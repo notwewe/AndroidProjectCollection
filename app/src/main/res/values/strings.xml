@@ -26,6 +26,6 @@
     <string name="btnbgcolor">BUTTON COLOR</string>
     <string name="btncalc">CALCULATOR</string>
     <string name="btnMatch">MATCH 3</string>
-
+    <string name="btnMatch3">MATCH 3 ACTIVITY</string>
 
 </resources>
