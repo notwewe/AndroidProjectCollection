@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button layout, button, calc, match;
+    Button layout, button, calc, match, passintent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +22,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent out = new Intent(MainActivity.this, LayoutExercise.class);
+                startActivity(out);
+            }
+        });
+
+        passintent = (Button) findViewById(R.id.btnIntent);
+        passintent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent out = new Intent(MainActivity.this, PassingIntentsExercise.class);
                 startActivity(out);
             }
         });
