@@ -28,5 +28,6 @@
     <string name="btnMatch">MATCH 3</string>
     <string name="btnMatch3">MATCH 3 ACTIVITY</string>
     <string name="btnIntent">PASSING INTENTS</string>
+    <string name="btnMenu">MENU</string>
 
 </resources>

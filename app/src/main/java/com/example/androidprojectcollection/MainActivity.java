@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button layout, button, calc, match, passintent;
+    Button layout, button, calc, match, passintent, menu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +32,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent out = new Intent(MainActivity.this, PassingIntentsExercise.class);
+                startActivity(out);
+            }
+        });
+
+        menu = (Button) findViewById(R.id.btnMenu);
+        menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent out = new Intent(MainActivity.this, MenuExercise.class);
                 startActivity(out);
             }
         });
