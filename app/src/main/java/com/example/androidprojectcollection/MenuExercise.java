@@ -42,6 +42,7 @@ public class MenuExercise extends AppCompatActivity {
             case R.id.mItemChangeIcon:
                 btnChanger.setImageResource(R.drawable.ic_android);
                 btnChanger.setImageResource(R.drawable.baseline_airline_seat_flat_24);
+                btnChanger.setImageResource(R.drawable.baseline_cruelty_free_24);
 
                 return true;
 
@@ -54,11 +55,12 @@ public class MenuExercise extends AppCompatActivity {
                 return true;
 
             case R.id.mItemReset:
-                btnChanger.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(android.R.color.holo_blue_dark)));
-                btnChanger.setSize(FloatingActionButton.SIZE_NORMAL);
-                btnChanger.setImageResource(R.drawable.baseline_accessibility);
-                btnChanger.setContentDescription("Add");
-                btnChanger.show();
+
+                btnChanger.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(android.R.color.holo_blue_dark))); // Reset color to default
+                btnChanger.setSize(FloatingActionButton.SIZE_NORMAL); // Reset size to default
+                btnChanger.setImageResource(R.drawable.baseline_accessibility); // Reset icon to default
+                btnChanger.setContentDescription("Add"); // Reset text to default
+                btnChanger.show(); // Reset visibility to default
                 return true;
 
             case R.id.mItemExit:
