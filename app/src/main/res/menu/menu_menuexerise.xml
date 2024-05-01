@@ -11,8 +11,10 @@
                 android:id="@+id/mItemChangeSize"
                 android:title="Change Size" />
             <item
-                android:id="@+id/mItemChangeIcon"
-                android:title="Change Icon" />
+                android:id="@+id/mItemChangeSquare"
+                android:title="Change Shape" >
+
+            </item>
             <item
                 android:id="@+id/mItemChangeText"
                 android:title="Change Text" />
